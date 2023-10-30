@@ -4,6 +4,7 @@ import { WebView } from 'react-native-webview';
 
 export default function App() {
   // If device is on web browser, use iframe
+  // for localhost:8000 port, need http-server node package. refer to README
   return Platform.OS === "web" ? (
     <iframe src="http://localhost:8000/cesium.html" height={'100%'} width={'100%'} />
   ) : (
